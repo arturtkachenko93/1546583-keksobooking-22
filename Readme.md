@@ -1,7 +1,7 @@
 # Личный проект «Кексобукинг»
 
 * Студент: [Артур Ткаченко](https://up.htmlacademy.ru/javascript/22/user/1546583).
-* Наставник: `Неизвестно`.
+* Наставник: [Анна Цуканова](https://htmlacademy.ru/profile/nuposyatina).
 
 ---
 
