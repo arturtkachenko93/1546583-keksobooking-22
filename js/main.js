@@ -5,11 +5,11 @@ const getNumberRange = (min, max) => {
 }
 
 const getRandomInteger = (min, max) => {
-  const random = getNumberRange(min, max);
-
   if (min >= max || min < 0 || max < 0) {
     throw new Error('Число меньше 0!');
   }
+
+  const random = getNumberRange(min, max);
 
   return Math.floor(random);
 }
@@ -17,11 +17,11 @@ const getRandomInteger = (min, max) => {
 getRandomInteger(1,10);
 
 const getRandomFloatNumber = (min, max, count) => {
-  const random = getNumberRange(min, max);
-
   if (min >= max || min < 0 || max < 0) {
     throw new Error('Число меньше 0!');
   }
+
+  const random = getNumberRange(min, max);
 
   return random.toFixed(count);
 }
