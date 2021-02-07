@@ -1,25 +1,30 @@
-function randomInteger(min, max) {
-	let randomNumber = min - 0.5 + Math.random() * (max - min + 1);
-	return Math.round(randomNumber);
+'use strict';
 
-	if (randomInteger >= 0 && randomInteger <= 90) {
-		console.log(randomInteger)
-	} else {
-		console.log('number is not range')
-	}
+const getNumberRange = (min, max) => {
+    return min + Math.random() * (max + 1 - min);
 }
 
-console.log(randomInteger(90, 100));
 
+const getRandomInteger = (min, max) => {
+    const random = getNumberRange(min, max);
 
-function randomIntegerDot(min, max) {
-	return min + Math.random() * (max - min);
+    if (min >= max || min < 0 || max < 0) {
+        console.log('Число меньше 0');
+        return;
+    }
 
-	if (randomInteger >= 0 && randomInteger <= 90) {
-		console.log(randomInteger)
-	} else {
-		console.log('number is not range')
-	}
+    return Math.floor(random);
 }
 
-console.log(randomIntegerDot(num.toFixed(2)(1, 100)));
+const getRandomFloatNumber = (min, max, count) => {
+    const random = getNumberRange(min, max);
+
+    if (min >= max || min < 0 || max < 0) {
+
+      console.log('error');
+      return;
+    }
+
+    return random.toFixed(count);
+  }
+
